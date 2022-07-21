@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Singlenton.View.SessionPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label 
+                Text="Vista de Sesion"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="40"
+                />
+
+            <Label 
+                x:Name="txtMessage"
+                Text="La Sesion a sido iniciada !!!"
+                HorizontalOptions="CenterAndExpand" 
+                Margin="0,20,0,0"
+                FontSize="Title"
+                />
+
+            <Label 
+                x:Name="txtUser"
+                Text="Usuario: --"
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="Title"
+                Margin="0,220,0,0"
+                />
+
+            <Label 
+                x:Name="txtPass"
+                Text="Contraseña: --"
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="Title"
+                />
+
+            <Label 
+                x:Name="txtDate"
+                Text="DateTime: 00/00/0000"
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="Title"
+                />
+
+            <Button 
+                x:Name="btnLogout"
+                Text="CERRAR SESION"
+                Margin="20"
+                Clicked="btnLogout_Clicked"
+                />
+
+            <Button 
+                x:Name="btnSaveLog"
+                Text="GUARDAR LOG"
+                Margin="20, 0"
+                Clicked="btnSaveLog_Clicked"
+                />
+            <Button 
+                x:Name="btnListLog"
+                Text="Lista de los logs guardados"
+                Margin="20, 0"
+                Clicked="btnListLog_Clicked"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

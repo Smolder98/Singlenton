@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Singlenton.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Patron de diseño Singleton" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+
+        <Grid BackgroundColor="White" VerticalOptions="FillAndExpand">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+                
+            </Grid.RowDefinitions>
+            
+            <Label Text="Login" 
+                   FontSize="Title"
+                   HorizontalOptions="CenterAndExpand"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   />
+
+            <StackLayout Grid.Row="1"
+                         Grid.Column="0"
+                         Padding="20,0,20,0"
+                         >
+                <Label Text="Username" 
+                   FontSize="20"
+                   HorizontalOptions="Start"
+                   Margin="0"
+                   Padding="0"
+                   />
+
+                <Entry 
+                   x:Name="txtUser"
+                   Keyboard="Text"   
+                   HorizontalOptions="Fill"
+                   Placeholder="Usuario1"
+                   Margin="0"
+                   />
+
+                <Label Text="Password" 
+                   FontSize="20"
+                   HorizontalOptions="Start"
+                   Margin="0"
+                   Padding="0"
+                   />
+
+                <Entry 
+                   x:Name="txtPass"
+                   Keyboard="Text"
+                   HorizontalOptions="Fill"
+                   Placeholder="*********"
+                   Margin="0"
+                   />
+
+                <Button 
+                    x:Name="btnLogin"
+                    Text="INICIAR SESION"
+                    Clicked="btnLogin_Clicked"
+                        />
+
+
+                <Button 
+                    x:Name="btnNextScreen"
+                    Text="IR A LA SIGUIENTE PANTALLA"
+                    Clicked="btnNextScreen_Clicked"
+                        />
+            </StackLayout>
+        </Grid>
+        
+    </StackLayout>
+
+</ContentPage>
